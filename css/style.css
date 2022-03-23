@@ -1,0 +1,292 @@
+    html {
+        font-size: 1.2rem;
+        font-family: 'Roboto', 'Lora', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Lora', 'Roboto', sans-serif;
+        font-weight: 100;
+    }
+    
+    nav {
+        position: relative;
+        left: 38%;
+        top: 3%;
+    }
+    
+    body {
+        background: #FAF9F8;
+    }
+    
+    .contianer {
+        margin: 25px 0;
+    }
+    
+    p,
+    a {
+        font-weight: 300;
+    }
+    
+    .center {
+        margin: 0 auto;
+    }
+    
+    .img-wrap {
+        width: 100%;
+        height: auto;
+    }
+    
+    .portfolio {
+        margin-top: 25px;
+        margin-right: 5rem;
+    }
+    
+    .card {
+        width: 100%;
+        transition: 0.3s;
+        margin: 20px 0;
+        padding: 2.5rem;
+        box-shadow: 0 4px 10px 0 #121214;
+    }
+    
+    .card:hover {
+        box-shadow: 0 8px 18px 0 #121214;
+    }
+    
+    .card-container {
+        padding: 3px 15px;
+        background: #FAF9F8;
+    }
+    
+    li {
+        display: inline-block;
+        padding: 10px 25px;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        background: #121214;
+        border-radius: 4px;
+    }
+    
+    li a {
+        color: #FAF9F8;
+    }
+    
+    .tagline {
+        width: 85%;
+        letter-spacing: 5px;
+        font-family: 'Lora', 'Roboto', sans-serif;
+        font-weight: 500;
+        position: relative;
+        top: 10%;
+        left: 10%;
+        color: yellow;
+    }
+    
+    a {
+        color: #FAF9F8;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #FAF9F8;
+    }
+    
+    .dynamic-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .header {
+        background: #121214;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+    
+    span {
+        color: #FAF9F8;
+        font-weight: 800;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-family: 'Lora', 'Roboto', sans-serif;
+    }
+    
+    .row {
+        margin: 200px -10rem;
+    }
+    
+    .ref {
+        margin: 20px -60px;
+    }
+    
+    .parent p {
+        margin-left: 2rem;
+        width: 85%;
+    }
+    
+    footer {
+        background-color: #121214;
+        margin-left: -0.5rem;
+        padding-top: 2rem;
+    }
+    
+    footer p {
+        color: #FAF9F8;
+        padding: 0.5rem 1.5rem;
+        margin-top: 0px;
+        font-size: 0.7rem;
+        opacity: 40%;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .menu-social {
+        margin-left: 1.5rem;
+    }
+    
+    .tel {
+        font-size: 0.9rem;
+        opacity: 100%;
+        margin-top: -1rem;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+    figure {
+        width: 100%;
+    }
+    
+    figcaption {
+        font-size: 16px;
+        font-style: italic;
+    }
+    
+    .figure-container {
+        border-radius: 4px;
+        padding: 10px;
+        background: #FAF9F8;
+        width: 400px;
+        border: 1px #FAF9F8 solid;
+    }
+    
+    .figure-img {
+        width: 400px;
+    }
+    
+    figure p {
+        margin-top: 20px;
+    }
+    /* ------- MEDIA QUERIES ------ */
+    /* phone and up */
+    
+    @media only screen and (min-width: 480px) {
+        li {
+            display: inline;
+            width: 400px;
+            left: 0;
+        }
+    }
+    /* Landscape phone and up */
+    
+    @media only screen and (min-width: 640px) {
+        nav {
+            position: relative;
+            left: 50%;
+            top: 3%;
+        }
+    }
+    /* Portrait tablet and up */
+    
+    @media only screen and (min-width: 768px) {
+        nav {
+            position: relative;
+            left: 60%;
+            top: 3%;
+        }
+        .figure-img {
+            width: 550px;
+        }
+    }
+    /* Landscape desktop (17”) and up */
+    
+    @media only screen and (min-width: 960px) {
+        .figure-img {
+            width: 450px;
+        }
+        .tagline {
+            font-size: 65px;
+        }
+        .dynamic-content {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .card {
+            width: 80%;
+            transition: 0.3s;
+            margin: 30px 0;
+            padding: 2.5rem;
+            box-shadow: 0 4px 10px 0 #121214;
+        }
+        .portfolio {
+            margin-top: 25px;
+            margin-right: 10rem;
+            margin-left: 10rem;
+        }
+        span {
+            color: #FAF9F8;
+            font-weight: 800;
+            padding: 4rem;
+            font-size: 1.5rem;
+            font-family: 'Lora', 'Roboto', sans-serif;
+        }
+        .row {
+            width: 100%;
+        }
+        .parent {
+            display: flex;
+        }
+        .cotent {
+            padding-top: 50px;
+        }
+        .child:nth-child(1) {
+            flex-grow: 1;
+            margin-left: 5rem;
+        }
+        .child:nth-child(2) {
+            flex-grow: 2;
+            margin-left: 1rem;
+            margin-top: 5rem;
+        }
+        .image {
+            margin-right: 20px;
+        }
+        footer {
+            background-color: #121214;
+            margin-left: -0.5rem;
+            padding-left: 10rem;
+            padding-top: 2rem;
+        }
+    }
+    /* Widescreen desktop (24”) and up */
+    
+    @media only screen and (min-width: 1160px) {
+        footer {
+            background-color: #121214;
+            margin-left: -0.5rem;
+            padding-left: 4rem;
+            padding-top: 2rem;
+        }
+        .portfolio {
+            display: inline-flex;
+            width: 50%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 50%;
+            margin-top: 5rem;
+        }
+    }
